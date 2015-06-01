@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2618CA21B1C6E54007F9F23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CA11B1C6E54007F9F23 /* main.m */; };
+		D2618CA51B1C6E54007F9F23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CA41B1C6E54007F9F23 /* AppDelegate.m */; };
+		D2618CA81B1C6E54007F9F23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CA71B1C6E54007F9F23 /* ViewController.m */; };
+		D2618CAB1B1C6E54007F9F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2618CA91B1C6E54007F9F23 /* Main.storyboard */; };
+		D2618CAD1B1C6E54007F9F23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2618CAC1B1C6E54007F9F23 /* Images.xcassets */; };
+		D2618CB01B1C6E54007F9F23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2618CAE1B1C6E54007F9F23 /* LaunchScreen.xib */; };
+		D2618CBC1B1C6E54007F9F23 /* PompeuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CBB1B1C6E54007F9F23 /* PompeuTests.m */; };
+		D2618CCC1B1C6E91007F9F23 /* Pompeu.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CC71B1C6E91007F9F23 /* Pompeu.m */; };
+		D2618CCD1B1C6E91007F9F23 /* UIView+Pompeu.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CC91B1C6E91007F9F23 /* UIView+Pompeu.m */; };
+		D2618CCE1B1C6E91007F9F23 /* UIViewController+Pompeu.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CCB1B1C6E91007F9F23 /* UIViewController+Pompeu.m */; };
+		D2618CD11B1C70A2007F9F23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2618CCF1B1C70A2007F9F23 /* Localizable.strings */; };
+		D2618CD41B1C7151007F9F23 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CD31B1C7151007F9F23 /* TableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2618CB61B1C6E54007F9F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2618C941B1C6E54007F9F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2618C9B1B1C6E54007F9F23;
+			remoteInfo = Pompeu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2618C9C1B1C6E54007F9F23 /* Pompeu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pompeu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2618CA01B1C6E54007F9F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2618CA11B1C6E54007F9F23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2618CA31B1C6E54007F9F23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2618CA41B1C6E54007F9F23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2618CA61B1C6E54007F9F23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D2618CA71B1C6E54007F9F23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D2618CAA1B1C6E54007F9F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2618CAC1B1C6E54007F9F23 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D2618CAF1B1C6E54007F9F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D2618CB51B1C6E54007F9F23 /* PompeuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PompeuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2618CBA1B1C6E54007F9F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2618CBB1B1C6E54007F9F23 /* PompeuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PompeuTests.m; sourceTree = "<group>"; };
+		D2618CC61B1C6E91007F9F23 /* Pompeu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pompeu.h; sourceTree = "<group>"; };
+		D2618CC71B1C6E91007F9F23 /* Pompeu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pompeu.m; sourceTree = "<group>"; };
+		D2618CC81B1C6E91007F9F23 /* UIView+Pompeu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Pompeu.h"; sourceTree = "<group>"; };
+		D2618CC91B1C6E91007F9F23 /* UIView+Pompeu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Pompeu.m"; sourceTree = "<group>"; };
+		D2618CCA1B1C6E91007F9F23 /* UIViewController+Pompeu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Pompeu.h"; sourceTree = "<group>"; };
+		D2618CCB1B1C6E91007F9F23 /* UIViewController+Pompeu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Pompeu.m"; sourceTree = "<group>"; };
+		D2618CD01B1C70A2007F9F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D2618CD21B1C7151007F9F23 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D2618CD31B1C7151007F9F23 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2618C991B1C6E54007F9F23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2618CB21B1C6E54007F9F23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2618C931B1C6E53007F9F23 = {
+			isa = PBXGroup;
+			children = (
+				D2618C9E1B1C6E54007F9F23 /* Pompeu */,
+				D2618CB81B1C6E54007F9F23 /* PompeuTests */,
+				D2618C9D1B1C6E54007F9F23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2618C9D1B1C6E54007F9F23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2618C9C1B1C6E54007F9F23 /* Pompeu.app */,
+				D2618CB51B1C6E54007F9F23 /* PompeuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2618C9E1B1C6E54007F9F23 /* Pompeu */ = {
+			isa = PBXGroup;
+			children = (
+				D2618CA31B1C6E54007F9F23 /* AppDelegate.h */,
+				D2618CA41B1C6E54007F9F23 /* AppDelegate.m */,
+				D2618CA61B1C6E54007F9F23 /* ViewController.h */,
+				D2618CA71B1C6E54007F9F23 /* ViewController.m */,
+				D2618CD21B1C7151007F9F23 /* TableViewController.h */,
+				D2618CD31B1C7151007F9F23 /* TableViewController.m */,
+				D2618CCF1B1C70A2007F9F23 /* Localizable.strings */,
+				D2618CA91B1C6E54007F9F23 /* Main.storyboard */,
+				D2618CAC1B1C6E54007F9F23 /* Images.xcassets */,
+				D2618CAE1B1C6E54007F9F23 /* LaunchScreen.xib */,
+				D2618CC51B1C6E91007F9F23 /* Pompeu */,
+				D2618C9F1B1C6E54007F9F23 /* Supporting Files */,
+			);
+			path = Pompeu;
+			sourceTree = "<group>";
+		};
+		D2618C9F1B1C6E54007F9F23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2618CA01B1C6E54007F9F23 /* Info.plist */,
+				D2618CA11B1C6E54007F9F23 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2618CB81B1C6E54007F9F23 /* PompeuTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2618CBB1B1C6E54007F9F23 /* PompeuTests.m */,
+				D2618CB91B1C6E54007F9F23 /* Supporting Files */,
+			);
+			path = PompeuTests;
+			sourceTree = "<group>";
+		};
+		D2618CB91B1C6E54007F9F23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2618CBA1B1C6E54007F9F23 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2618CC51B1C6E91007F9F23 /* Pompeu */ = {
+			isa = PBXGroup;
+			children = (
+				D2618CC61B1C6E91007F9F23 /* Pompeu.h */,
+				D2618CC71B1C6E91007F9F23 /* Pompeu.m */,
+				D2618CC81B1C6E91007F9F23 /* UIView+Pompeu.h */,
+				D2618CC91B1C6E91007F9F23 /* UIView+Pompeu.m */,
+				D2618CCA1B1C6E91007F9F23 /* UIViewController+Pompeu.h */,
+				D2618CCB1B1C6E91007F9F23 /* UIViewController+Pompeu.m */,
+			);
+			name = Pompeu;
+			path = ../../Pompeu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2618C9B1B1C6E54007F9F23 /* Pompeu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2618CBF1B1C6E54007F9F23 /* Build configuration list for PBXNativeTarget "Pompeu" */;
+			buildPhases = (
+				D2618C981B1C6E54007F9F23 /* Sources */,
+				D2618C991B1C6E54007F9F23 /* Frameworks */,
+				D2618C9A1B1C6E54007F9F23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pompeu;
+			productName = Pompeu;
+			productReference = D2618C9C1B1C6E54007F9F23 /* Pompeu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2618CB41B1C6E54007F9F23 /* PompeuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2618CC21B1C6E54007F9F23 /* Build configuration list for PBXNativeTarget "PompeuTests" */;
+			buildPhases = (
+				D2618CB11B1C6E54007F9F23 /* Sources */,
+				D2618CB21B1C6E54007F9F23 /* Frameworks */,
+				D2618CB31B1C6E54007F9F23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2618CB71B1C6E54007F9F23 /* PBXTargetDependency */,
+			);
+			name = PompeuTests;
+			productName = PompeuTests;
+			productReference = D2618CB51B1C6E54007F9F23 /* PompeuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2618C941B1C6E54007F9F23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Mobile Jazz";
+				TargetAttributes = {
+					D2618C9B1B1C6E54007F9F23 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D2618CB41B1C6E54007F9F23 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D2618C9B1B1C6E54007F9F23;
+					};
+				};
+			};
+			buildConfigurationList = D2618C971B1C6E54007F9F23 /* Build configuration list for PBXProject "Pompeu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2618C931B1C6E53007F9F23;
+			productRefGroup = D2618C9D1B1C6E54007F9F23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2618C9B1B1C6E54007F9F23 /* Pompeu */,
+				D2618CB41B1C6E54007F9F23 /* PompeuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2618C9A1B1C6E54007F9F23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2618CD11B1C70A2007F9F23 /* Localizable.strings in Resources */,
+				D2618CAB1B1C6E54007F9F23 /* Main.storyboard in Resources */,
+				D2618CB01B1C6E54007F9F23 /* LaunchScreen.xib in Resources */,
+				D2618CAD1B1C6E54007F9F23 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2618CB31B1C6E54007F9F23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2618C981B1C6E54007F9F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2618CCD1B1C6E91007F9F23 /* UIView+Pompeu.m in Sources */,
+				D2618CA81B1C6E54007F9F23 /* ViewController.m in Sources */,
+				D2618CA51B1C6E54007F9F23 /* AppDelegate.m in Sources */,
+				D2618CCC1B1C6E91007F9F23 /* Pompeu.m in Sources */,
+				D2618CCE1B1C6E91007F9F23 /* UIViewController+Pompeu.m in Sources */,
+				D2618CD41B1C7151007F9F23 /* TableViewController.m in Sources */,
+				D2618CA21B1C6E54007F9F23 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2618CB11B1C6E54007F9F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2618CBC1B1C6E54007F9F23 /* PompeuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2618CB71B1C6E54007F9F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2618C9B1B1C6E54007F9F23 /* Pompeu */;
+			targetProxy = D2618CB61B1C6E54007F9F23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2618CA91B1C6E54007F9F23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2618CAA1B1C6E54007F9F23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2618CAE1B1C6E54007F9F23 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2618CAF1B1C6E54007F9F23 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D2618CCF1B1C70A2007F9F23 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2618CD01B1C70A2007F9F23 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2618CBD1B1C6E54007F9F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2618CBE1B1C6E54007F9F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2618CC01B1C6E54007F9F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pompeu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D2618CC11B1C6E54007F9F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pompeu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D2618CC31B1C6E54007F9F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PompeuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pompeu.app/Pompeu";
+			};
+			name = Debug;
+		};
+		D2618CC41B1C6E54007F9F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PompeuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pompeu.app/Pompeu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2618C971B1C6E54007F9F23 /* Build configuration list for PBXProject "Pompeu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2618CBD1B1C6E54007F9F23 /* Debug */,
+				D2618CBE1B1C6E54007F9F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2618CBF1B1C6E54007F9F23 /* Build configuration list for PBXNativeTarget "Pompeu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2618CC01B1C6E54007F9F23 /* Debug */,
+				D2618CC11B1C6E54007F9F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2618CC21B1C6E54007F9F23 /* Build configuration list for PBXNativeTarget "PompeuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2618CC31B1C6E54007F9F23 /* Debug */,
+				D2618CC41B1C6E54007F9F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2618C941B1C6E54007F9F23 /* Project object */;
+}

@@ -1,0 +1,27 @@
+//
+//
+//
+
+"ls_title_1" = "Title 1";
+"ls_title_2" = "Title 2";
+
+"ls_tab_1" = "Tab 1";
+"ls_tab_2" = "Tab 2";
+
+"ls_label_1" = "Label text";
+"ls_button_1" = "Button text";
+"ls_button_highlighted_1" = "Highlighted text";
+"ls_textfield_1" = "TextField text";
+"ls_placeholder_1" = "Placeholder text";
+"ls_seg_1" = "Option 1";
+"ls_seg_2" = "Option 2";
+
+"ls_cell_title_1" = "Cell Title 1";
+"ls_cell_subtitle_1" = "Cell Subtitle 1";
+"ls_cell_title_2" = "Cell Title 2";
+"ls_cell_subtitle_2" = "Cell Subtitle 2";
+"ls_header_1" = "Header 1";
+"ls_footer_1" = "Footer 1";
+
+"ls_item_1" = "Item 1";
+"ls_item_2" = "Item 2";
