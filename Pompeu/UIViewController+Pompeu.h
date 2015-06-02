@@ -39,7 +39,7 @@
 @end
 
 /**
- * Support for UITabBarController localization.
+ * Support for UITabBarController localization.
  **/
 @interface UITabBarController (Pompeu)
 
