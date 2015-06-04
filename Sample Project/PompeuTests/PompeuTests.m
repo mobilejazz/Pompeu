@@ -119,4 +119,28 @@
     });
 }
 
+- (void)testNavigationLocalization{
+    
+    UIViewController *first = [[UIViewController alloc] init];
+    UIViewController *second = [[UIViewController alloc] init];
+    UIViewController *third = [[UIViewController alloc] init];
+    
+    first.title = @"pompeu_test_navigation_first";
+    second.title = @"pompeu_test_navigation_second";
+    third.title = @"pompeu_test_navigation_third";
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:first];
+    [navigationController pushViewController:second animated:NO];
+    [navigationController pushViewController:third animated:NO];
+    
+    [third pmp_localizate];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.00 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        XCTAssertEqualObjects(first.navigationItem.title, @"first controller");
+        XCTAssertEqualObjects(second.navigationItem.title, @"second controller");
+        XCTAssertEqualObjects(third.navigationItem.title, @"third controller");
+    });
+    
+}
+
 @end
