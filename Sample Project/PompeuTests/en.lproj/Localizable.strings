@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Pompeu
+
+  Created by Paolo Tagliani on 6/4/15.
+  Copyright (c) 2015 Mobile Jazz. All rights reserved.
+*/
+"pompeu_test_label" = "label text";
+
+"pompeu_test_button_default" = "default button title";
+"pompeu_test_button_highlighted" = "highlighted button title";
+"pompeu_test_button_selected" = "selected button title";
+"pompeu_test_button_disabled" = "disabled button title";
+
+"pompeu_test_textview" = "text view text";
+
+"pompeu_test_textfield" = "text field text";
+
+"pompeu_test_segmented_first" = "first segment title";
+"pompeu_test_segmented_second" = "second segment title";
+"pompeu_test_segmented_third" = "third segment title";
+
+"pompeu_test_navigation_first" = "first_controller";
+"pompeu_test_navigation_second" = "second_controller";
+"pompeu_test_navigation_third" = "third_controller";

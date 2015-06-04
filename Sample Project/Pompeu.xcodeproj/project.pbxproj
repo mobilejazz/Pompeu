@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48088B601B20593F00E66BE3 /* PompeuTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48088B5E1B20593F00E66BE3 /* PompeuTestViewController.m */; };
+		48088B611B20593F00E66BE3 /* PompeuTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48088B5F1B20593F00E66BE3 /* PompeuTestViewController.xib */; };
+		48088B6C1B20598100E66BE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48088B6E1B20598100E66BE3 /* Localizable.strings */; };
 		D2618CA21B1C6E54007F9F23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CA11B1C6E54007F9F23 /* main.m */; };
 		D2618CA51B1C6E54007F9F23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CA41B1C6E54007F9F23 /* AppDelegate.m */; };
 		D2618CA81B1C6E54007F9F23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2618CA71B1C6E54007F9F23 /* ViewController.m */; };
@@ -32,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48088B5D1B20593F00E66BE3 /* PompeuTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PompeuTestViewController.h; sourceTree = "<group>"; };
+		48088B5E1B20593F00E66BE3 /* PompeuTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PompeuTestViewController.m; sourceTree = "<group>"; };
+		48088B5F1B20593F00E66BE3 /* PompeuTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PompeuTestViewController.xib; sourceTree = "<group>"; };
+		48088B6D1B20598100E66BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		48088B6F1B20598200E66BE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D2618C9C1B1C6E54007F9F23 /* Pompeu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pompeu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2618CA01B1C6E54007F9F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2618CA11B1C6E54007F9F23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 			children = (
 				D2618CBB1B1C6E54007F9F23 /* PompeuTests.m */,
 				D2618CB91B1C6E54007F9F23 /* Supporting Files */,
+				48088B6E1B20598100E66BE3 /* Localizable.strings */,
 			);
 			path = PompeuTests;
 			sourceTree = "<group>";
@@ -132,6 +141,9 @@
 		D2618CB91B1C6E54007F9F23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48088B5D1B20593F00E66BE3 /* PompeuTestViewController.h */,
+				48088B5E1B20593F00E66BE3 /* PompeuTestViewController.m */,
+				48088B5F1B20593F00E66BE3 /* PompeuTestViewController.xib */,
 				D2618CBA1B1C6E54007F9F23 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -242,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48088B611B20593F00E66BE3 /* PompeuTestViewController.xib in Resources */,
+				48088B6C1B20598100E66BE3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48088B601B20593F00E66BE3 /* PompeuTestViewController.m in Sources */,
 				D2618CBC1B1C6E54007F9F23 /* PompeuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +296,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		48088B6E1B20598100E66BE3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48088B6D1B20598100E66BE3 /* Base */,
+				48088B6F1B20598200E66BE3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D2618CA91B1C6E54007F9F23 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
