@@ -54,6 +54,69 @@
     });
 }
 
+- (void)testLocalizationLabel
+{
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"pompeu_test_label";
+    [label pmp_localizate];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.00 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        XCTAssertEqualObjects(label.text, @"label text");
+    });
+}
 
+- (void)testLocalizationButton
+{
+    UIButton *button = [[UIButton alloc] init];
+    [button setTitle:@"pompeu_test_button_default" forState:UIControlStateNormal];
+    [button setTitle:@"pompeu_test_button_highlighted" forState:UIControlStateHighlighted];
+    [button setTitle:@"pompeu_test_button_selected" forState:UIControlStateSelected];
+    [button setTitle:@"pompeu_test_button_disabled" forState:UIControlStateDisabled];
+    
+    [button pmp_localizate];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.00 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        XCTAssertEqualObjects([button titleForState:UIControlStateNormal], @"default button title");
+        XCTAssertEqualObjects([button titleForState:UIControlStateHighlighted], @"highlighted button title");
+        XCTAssertEqualObjects([button titleForState:UIControlStateSelected], @"selected button title");
+        XCTAssertEqualObjects([button titleForState:UIControlStateDisabled], @"disabled button title");
+    });
+}
+
+- (void)testLocalizationTextView
+{
+    UITextView *textView = [[UITextView alloc] init];
+    textView.text = @"pompeu_test_textview";
+    [textView pmp_localizate];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.00 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        XCTAssertEqualObjects(textView.text, @"text view text");
+    });
+}
+
+- (void)testLocalizationTextField
+{
+    UITextField *textField = [[UITextField alloc] init];
+    textField.text = @"pompeu_test_textfield";
+    [textField pmp_localizate];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.00 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        XCTAssertEqualObjects(textField.text, @"text field text");
+    });
+}
+
+- (void)testLocalizationSegmentedView
+{
+    
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"pompeu_test_segmented_first", @"pompeu_test_segmented_second", @"pompeu_test_segmented_third"]];
+    
+    [segmentedControl pmp_localizate];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.00 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        XCTAssertEqualObjects([segmentedControl titleForSegmentAtIndex:0], @"first segment title");
+        XCTAssertEqualObjects([segmentedControl titleForSegmentAtIndex:1], @"second segment title");
+        XCTAssertEqualObjects([segmentedControl titleForSegmentAtIndex:2], @"third segment title");
+    });
+}
 
 @end
