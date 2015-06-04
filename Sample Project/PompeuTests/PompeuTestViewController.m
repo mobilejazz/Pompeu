@@ -15,7 +15,8 @@
 
 @implementation PompeuTestViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self pmp_localizate];
 }

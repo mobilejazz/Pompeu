@@ -119,8 +119,8 @@
     });
 }
 
-- (void)testNavigationLocalization{
-    
+- (void)testNavigationLocalization
+{
     UIViewController *first = [[UIViewController alloc] init];
     UIViewController *second = [[UIViewController alloc] init];
     UIViewController *third = [[UIViewController alloc] init];
@@ -140,7 +140,6 @@
         XCTAssertEqualObjects(second.navigationItem.title, @"second controller");
         XCTAssertEqualObjects(third.navigationItem.title, @"third controller");
     });
-    
 }
 
 @end
