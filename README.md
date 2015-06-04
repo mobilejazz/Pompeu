@@ -1,3 +1,7 @@
+<!--[![Version](https://cocoapod-badges.herokuapp.com/v/Pompeu/badge.png)](http://cocoadocs.org/docsets/Motis) 
+[![Platform](https://cocoapod-badges.herokuapp.com/p/Pompeu/badge.png)](http://cocoadocs.org/docsets/Motis) -->
+[![Build Status](https://travis-ci.org/mobilejazz/Pompeu.png)](https://travis-ci.org/mobilejazz/Pompeu)
+
 # Pompeu
 Automatic xib and storyboard localizations for iOS
 
