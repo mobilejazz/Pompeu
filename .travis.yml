@@ -3,4 +3,4 @@ before_script:
   - brew update
   - brew upgrade xctool
 script: 
-  - xctool -project 'Sample Project/Pompeu.xcodeproj' -scheme 'Pompeu' -configuration Release -sdk iphonesimulator test
+  - xctool -project SampleProject/Pompeu.xcodeproj -scheme 'Pompeu' -configuration Release -sdk iphonesimulator test
