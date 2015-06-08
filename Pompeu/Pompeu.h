@@ -38,5 +38,6 @@
  * Localizates an string if contains one of the localization prefixes.
  **/
 - (NSString*)localizedString:(NSString*)string;
+- (NSAttributedString*)localizedStringAttrib:(NSAttributedString*)attribString;
 
 @end
