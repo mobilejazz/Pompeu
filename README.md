@@ -43,8 +43,6 @@ When iterating on the UIView subview's hierarchy, Pompeu is seeking for specific
 - **UITextField**: localizing the *text* and *placeholder* property.
 - **UISegmentedControl**: localizing all segments titles.
 
-**Note**: Pompeu do not perform any localization if an attributedText has been set.
-
 ## Working with Localization Prefixes
 
 Use the `Pompeu` class to configure the localization prefixes. A prefix is used to define which strings must be localized and which don't. The `Pompeu` object has a property (array) called `localizationPrefixes` which by default is empty. This means that all strings will be localized. 
