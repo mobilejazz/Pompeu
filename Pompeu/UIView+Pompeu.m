@@ -36,32 +36,58 @@
     
     while (array.count > 0)
     {
+        // Get the next view
         UIView *view = [array firstObject];
+        
+        // Remove the view from the array
+        [array removeObjectAtIndex:0];
         
         if ([view isKindOfClass:UILabel.class])
         {
             UILabel *label = (id)view;
-            label.attributedText = [localization localizedStringAttrib:label.attributedText];
+            if (label.attributedText)
+                label.attributedText = [localization localizedAttributedString:label.attributedText];
+            else
+                label.text = [localization localizedString:label.text];
         }
         else if ([view isKindOfClass:UITextField.class])
         {
             UITextField *textField = (id)view;
-            textField.text = [localization localizedString:textField.text];
-            textField.placeholder = [localization localizedString:textField.placeholder];
+            
+            if (textField.attributedText)
+                textField.attributedText = [localization localizedAttributedString:textField.attributedText];
+            else
+                textField.text = [localization localizedString:textField.text];
+            
+            if (textField.attributedPlaceholder)
+                textField.attributedPlaceholder = [localization localizedAttributedString:textField.attributedPlaceholder];
+            else
+                textField.placeholder = [localization localizedString:textField.placeholder];
         }
         else if ([view isKindOfClass:UITextView.class])
         {
             UITextView *textView = (id)view;
             if (textView.attributedText == nil)
                 textView.text = [localization localizedString:textView.text];
+            else
+                textView.attributedText = [localization localizedAttributedString:textView.attributedText];
         }
         else if ([view isKindOfClass:UIButton.class])
         {
             UIButton *button = (id)view;
             
             void (^localizeButtonForState)(UIControlState) = ^(UIControlState state){
-                NSString *text = [button titleForState:state];
-                [button setTitle:[localization localizedString:text] forState:state];
+                
+                NSAttributedString *attributedTitle = [button attributedTitleForState:state];
+                if (attributedTitle)
+                {
+                    [button setAttributedTitle:[localization localizedAttributedString:attributedTitle] forState:state];
+                }
+                else
+                {
+                    NSString *text = [button titleForState:state];
+                    [button setTitle:[localization localizedString:text] forState:state];
+                }
             };
             
             localizeButtonForState(UIControlStateNormal);
@@ -78,13 +104,12 @@
                 NSString *title = [localization localizedString:[segment titleForSegmentAtIndex:i]];
                 [segment setTitle:title forSegmentAtIndex:i];
             }
-                
-            [array removeObjectAtIndex:0];
-            continue;
         }
-        
-        [array removeObjectAtIndex:0];
-        [array addObjectsFromArray:view.subviews];
+        else
+        {
+            // Otherwise, lets iterate on the subviews of the view
+            [array addObjectsFromArray:view.subviews];
+        }
     }
 }
 

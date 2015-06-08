@@ -1,6 +1,6 @@
 {
   "name": "Pompeu",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "Automatic XIB and storyboard localizations for iOS",
   "description": "With Pompeu you can add localizable keys in your XIBs and storyboards and perform an automatic translation.",
   "homepage": "https://github.com/mobilejazz/Pompeu",
@@ -14,7 +14,7 @@
   "social_media_url": "http://twitter.com/mobilejazzcat",
   "source": {
     "git": "https://github.com/mobilejazz/Pompeu.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "source_files": [
     "Pompeu/*.{h,m}"
