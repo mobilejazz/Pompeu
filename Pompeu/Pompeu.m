@@ -56,21 +56,21 @@
     return localizedString;
 }
 
-
--(NSAttributedString*)localizedStringAttrib:(NSAttributedString*)attribString
+- (NSAttributedString*)localizedAttributedString:(NSAttributedString*)attributedString
 {
-    NSMutableAttributedString *returnString = [[NSMutableAttributedString alloc]init];
-    NSRange totalRange = NSMakeRange (0, attribString.length);
+    if (attributedString == nil)
+        return nil;
     
-    [attribString enumerateAttributesInRange: totalRange options: 0 usingBlock: ^(NSDictionary *attributes, NSRange range, BOOL *stop)
-     {
-         NSString *string = [[attribString string] substringWithRange:range];
-         NSString *trans = [self localizedString:string];
+    NSMutableAttributedString *returnString = [[NSMutableAttributedString alloc] init];
+    NSRange totalRange = NSMakeRange (0, attributedString.length);
+    
+    [attributedString enumerateAttributesInRange:totalRange options:0 usingBlock:^(NSDictionary *attributes, NSRange range, BOOL *stop){
+         NSString *string = [[attributedString string] substringWithRange:range];
+         NSString *localizedString = [self localizedString:string];
          
-         NSAttributedString *translatedString = [[NSAttributedString alloc]initWithString:trans attributes:attributes];
+         NSAttributedString *translatedString = [[NSAttributedString alloc] initWithString:localizedString attributes:attributes];
          
          [returnString appendAttributedString:translatedString];
-         
      }];
     
     return returnString;

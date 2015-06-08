@@ -36,8 +36,16 @@
 
 /**
  * Localizates an string if contains one of the localization prefixes.
+ * @param string An string.
+ * @return A localized string.
  **/
 - (NSString*)localizedString:(NSString*)string;
-- (NSAttributedString*)localizedStringAttrib:(NSAttributedString*)attribString;
+
+/**
+ * Localizates an attributed string if contains one of the localization prefixes.
+ * @param attributedString An attributed string.
+ * @return A localized attributed string.
+ **/
+- (NSAttributedString*)localizedAttributedString:(NSAttributedString*)attributedString;
 
 @end
