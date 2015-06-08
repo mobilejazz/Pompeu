@@ -41,7 +41,7 @@
         if ([view isKindOfClass:UILabel.class])
         {
             UILabel *label = (id)view;
-            label.text = [localization localizedString:label.text];
+            label.attributedText = [localization localizedStringAttrib:label.attributedText];
         }
         else if ([view isKindOfClass:UITextField.class])
         {
