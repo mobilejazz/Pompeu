@@ -74,7 +74,7 @@
     // ------------------------------------------------------------------------------------------------------------------------
     // TabBarController localization
     //
-    [self.tabBarController pmp_localizateWithPompeu:pompeu];
+    [self.tabBarController pmp_localizateTabsWithPompeu:pompeu];
     
     // ------------------------------------------------------------------------------------------------------------------------
     // View localization
