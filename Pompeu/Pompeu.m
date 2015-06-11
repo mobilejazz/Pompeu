@@ -17,6 +17,9 @@
 #import "Pompeu.h"
 
 @implementation Pompeu
+{
+    NSString* (^_localizedStringBlock)(NSString*);
+}
 
 + (Pompeu*)defaultPompeu
 {
@@ -34,8 +37,21 @@
     if (self)
     {
         _localizationPrefixes = @[];
+        [self setLocalizationMethod:nil];
     }
     return self;
+}
+
+- (void)setLocalizationMethod:(NSString* (^)(NSString*))localizedStringBlock
+{
+    if (localizedStringBlock == nil)
+    {
+        localizedStringBlock = ^NSString*(NSString *string) {
+            return NSLocalizedString(string, nil);
+        };
+    }
+    
+    _localizedStringBlock = localizedStringBlock;
 }
 
 - (NSString*)localizedString:(NSString*)string
@@ -48,7 +64,7 @@
     [[Pompeu defaultPompeu].localizationPrefixes enumerateObjectsUsingBlock:^(NSString *prefix, NSUInteger idx, BOOL *stop) {
         if ([string hasPrefix:prefix])
         {
-            localizedString = NSLocalizedString(string, nil);
+            localizedString = _localizedStringBlock(string);
             *stop = YES;
         }
     }];
