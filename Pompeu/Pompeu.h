@@ -35,6 +35,15 @@
 @property (nonatomic, strong) NSArray *localizationPrefixes;
 
 /**
+ * Configure the localization method. Default method uses the NSLocalizedString(string,comment).
+ * @param localizationMethodBlock A block that has as parameter a string to localize and must return the localized string.
+ * @discussion 
+ * Calling this block with a nil block resets the localization method to the default NSLocalizedString one.
+ * Do not create any strong reference inside this block. Objects will be retained during the Pompeu life cycle.
+ **/
+- (void)setLocalizationMethod:(NSString* (^)(NSString *string))localizationMethodBlock;
+
+/**
  * Localizates an string if contains one of the localization prefixes.
  * @param string An string.
  * @return A localized string.
