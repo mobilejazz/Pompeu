@@ -1,7 +1,7 @@
 [![Version](https://cocoapod-badges.herokuapp.com/v/Pompeu/badge.png)](http://cocoadocs.org/docsets/Pompeu) 
 [![Platform](https://cocoapod-badges.herokuapp.com/p/Pompeu/badge.png)](http://cocoadocs.org/docsets/Pompeu)
 [![Build Status](https://travis-ci.org/mobilejazz/Pompeu.png)](https://travis-ci.org/mobilejazz/Pompeu)
-[![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/Pompeu)
+[![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/Pompeu/)
 
 # Pompeu
 Automatic xib and storyboard localizations for iOS
