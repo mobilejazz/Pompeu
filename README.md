@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/mobilejazz/Pompeu.png)](https://travis-ci.org/mobilejazz/Pompeu)
 [![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/Pompeu/)
 
+![Pompeu](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-pompeu-ios.jpg)
+
 # Pompeu
 Automatic xib and storyboard localizations for iOS
 
